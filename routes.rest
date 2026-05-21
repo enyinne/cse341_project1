@@ -1,0 +1,14 @@
+### LOCALHOST - GET all contacts
+GET http://localhost:3000/contacts
+
+
+### LOCALHOST - GET one contact
+GET http://localhost:3000/contacts/6a0f16384d1dfc0f91b90d52
+
+
+### RENDER - GET all contacts
+GET https://cse341-project1-p1mh.onrender.com/contacts
+
+
+### RENDER - GET one contact
+GET https://cse341-project1-p1mh.onrender.com/contacts/6a0f16384d1dfc0f91b90d52
