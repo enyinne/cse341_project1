@@ -1,14 +1,87 @@
-### LOCALHOST - GET all contacts
+### =========================
+### LOCALHOST - GET ALL
+### =========================
 GET http://localhost:3000/contacts
 
 
-### LOCALHOST - GET one contact
+### =========================
+### LOCALHOST - GET ONE
+### =========================
 GET http://localhost:3000/contacts/6a0f16384d1dfc0f91b90d52
 
 
-### RENDER - GET all contacts
+### =========================
+### LOCALHOST - CREATE (POST)
+### =========================
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Joy",
+  "lastName": "Test",
+  "email": "joy@test.com",
+  "favoriteColor": "Blue",
+  "birthday": "2000-01-01"
+}
+
+
+### =========================
+### LOCALHOST - UPDATE (PUT)
+### =========================
+PUT http://localhost:3000/contacts/6a0f16384d1dfc0f91b90d52
+Content-Type: application/json
+
+{
+  "favoriteColor": "Red"
+}
+
+
+### =========================
+### LOCALHOST - DELETE
+### =========================
+DELETE http://localhost:3000/contacts/6a0f16384d1dfc0f91b90d52
+
+
+
+### =========================
+### RENDER - GET ALL
+### =========================
 GET https://cse341-project1-p1mh.onrender.com/contacts
 
 
-### RENDER - GET one contact
+### =========================
+### RENDER - GET ONE
+### =========================
 GET https://cse341-project1-p1mh.onrender.com/contacts/6a0f16384d1dfc0f91b90d52
+
+
+### =========================
+### RENDER - CREATE (POST)
+### =========================
+POST https://cse341-project1-p1mh.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Joy",
+  "lastName": "Test",
+  "email": "joy@test.com",
+  "favoriteColor": "Blue",
+  "birthday": "2000-01-01"
+}
+
+
+### =========================
+### RENDER - UPDATE (PUT)
+### =========================
+PUT https://cse341-project1-p1mh.onrender.com/contacts/6a0f16384d1dfc0f91b90d52
+Content-Type: application/json
+
+{
+  "favoriteColor": "Red"
+}
+
+
+### =========================
+### RENDER - DELETE
+### =========================
+DELETE https://cse341-project1-p1mh.onrender.com/contacts/6a0f16384d1dfc0f91b90d52
