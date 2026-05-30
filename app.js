@@ -1,7 +1,8 @@
 const express = require('express');
 const mongodb = require('./db/connect');
-const contactsRoutes = require('./routes/contacts');
+const routes = require('./routes');
 const cors = require('cors');
+
 
 const port = process.env.PORT || 3000;
 
@@ -19,7 +20,7 @@ const swaggerDocument = require('./swagger.json');
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Routes
-app.use('/contacts', contactsRoutes);
+app.use('/', routes);
 
 // Home route
 app.get('/', (req, res) => {

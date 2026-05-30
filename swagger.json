@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Contacts API",
-    "description": "Contacts API for CSE341",
+    "description": "CSE341 Contacts API",
     "version": "1.0.0"
   },
   "host": "localhost:3000",
@@ -11,16 +11,6 @@
     "http"
   ],
   "paths": {
-    "/": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/contacts/": {
       "get": {
         "description": "",
