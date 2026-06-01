@@ -6,6 +6,8 @@ const doc = {
     description: 'CSE341 Contacts API'
   },
   host: 'cse341-project1-qqjz.onrender.com',
+  //host: 'localhost:3000',  
+  //schemes: ['http']
   schemes: ['https']
 };
 
