@@ -3,16 +3,10 @@ const swaggerAutogen = require('swagger-autogen')();
 const doc = {
   info: {
     title: 'Contacts API',
-    description: 'CSE341 Contacts API',
+    description: 'CSE341 Contacts API'
   },
-
-  host: process.env.RENDER_EXTERNAL_HOSTNAME
-    ? process.env.RENDER_EXTERNAL_HOSTNAME
-    : 'localhost:3000',
-
-  schemes: process.env.RENDER_EXTERNAL_HOSTNAME
-    ? ['https']
-    : ['http'],
+  host: 'cse341-project1-qqjz.onrender.com',
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';
